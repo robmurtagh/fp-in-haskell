@@ -2,7 +2,7 @@
 
 Worked exercises for the book [Functional Programming in Scala](https://www.manning.com/books/functional-programming-in-scala), this time written in Haskell.
 
-See also my [fp-in-scala repo](https://github.com/robmurtagh/fp-in-scala).
+See also my [fp-in-scala](https://github.com/robmurtagh/fp-in-scala) repo.
 
 As per the book's introduction, this "_is not a book about Scala. This book is an introduction to functional programming...we use Scala as the vehicle to get you there._".
 
