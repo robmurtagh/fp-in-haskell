@@ -1,0 +1,15 @@
+{
+  "name": "fp-in-haskell",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app/Main.hs",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "stack build && stack exec fp-in-haskell-exe",
+    "test": "stack test --file-watch --fast"
+  },
+  "author": "Robert Murtagh",
+  "license": "ISC"
+}
