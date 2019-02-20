@@ -67,17 +67,17 @@ data MyTree a = Leaf a | Branch (MyTree a) (MyTree a) | DeadLeaf
     deriving (Show, Eq)
 
 mySize :: MyTree a -> Int
-mySize (Leaf _) = 1
-mySize (Branch left right) = mySize(left) + mySize(right)
+mySize (Leaf _           ) = 1
+mySize (Branch left right) = (mySize left) + (mySize right)
 
 myMax :: (Ord a) => MyTree a -> a
-myMax (Leaf a) = a
+myMax (Leaf a           ) = a
 myMax (Branch left right) = max (myMax left) (myMax right)
 
 myDepth :: MyTree a -> Int
-myDepth (Leaf _) = 0
+myDepth (Leaf _           ) = 0
 myDepth (Branch left right) = max ((myDepth left) + 1) ((myDepth right) + 1)
 
 myMap :: MyTree a -> (a -> b) -> MyTree b
-myMap (Leaf a) f = Leaf (f a)
+myMap (Leaf a           ) f = Leaf (f a)
 myMap (Branch left right) f = Branch (myMap left f) (myMap right f)

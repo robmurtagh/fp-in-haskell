@@ -10,7 +10,7 @@ import           Data.Monoid             hiding ( Sum
                                                 , Endo
                                                 )
 
--- MONOID - ASSOCIATIVE OPERATION HAVING AN IDENTITY ELEMENT
+-- MONOID - INSTANCES OF MONOID HAVE AN ASSOCIATIVE 'APPEND' OPERATION AND AN IDENTITY ELEMENT
 -- https://en.wikibooks.org/wiki/Haskell/Monoids
 -- "integer numbers form a monoid under addition with 0 as identity element"
 -- mappend === (<>)
@@ -20,7 +20,7 @@ class MyMonoid a where
     op :: a -> a -> a
     zero :: a
 
--- Make lists instance of my own Monoid typeclass
+-- Make lists an instance of my own Monoid typeclass
 instance MyMonoid [a] where
     op x y = x ++ y
     zero = []

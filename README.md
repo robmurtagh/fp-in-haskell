@@ -25,3 +25,13 @@ If you wanted to make an executable out of these library functions. You'd use th
 ```bash
 npm run start
 ```
+
+## Contents
+
+The code here is only loosely based on the book exercises. In many cases the theme is the same, but the code is taken from other online Haskell resources:
+
+* [Chapter 2 - Basic Syntax](/src/Chapter2.hs)
+* [Chapter 3 - Functional Data Structures](/src/Chapter3.hs)
+* [Chapter 4 - Error Handling Data Structures](/src/Chapter4.hs)
+* [Chapter 10 - Semigroups, Monoids](/src/Chapter10.hs)
+* [Chapter 11 - Functors, Applicative Functors, Monads](/src/Chapter11.hs)
